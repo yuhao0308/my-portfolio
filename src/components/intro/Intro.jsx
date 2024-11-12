@@ -66,7 +66,7 @@ const Intro = () => {
                 </motion.div>
             </motion.div>
             <div className="imageContainer">
-                <img src="/intro.JPG" alt="me" />
+                <img src="./intro.JPG" alt="me" />
             </div>
         </div>
     );

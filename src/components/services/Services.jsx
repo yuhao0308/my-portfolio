@@ -21,7 +21,7 @@ const variants = {
 
 const Services = () => {
     const ref = useRef();
-    
+
     const isInView = useInView(ref, {margin: "-100px"});
 
     const [animationState, setAnimationState] = useState("initial");
@@ -39,13 +39,13 @@ const Services = () => {
     return (
         <motion.div className="services" ref={ref} variants={variants} initial="initial" animate={animationState}>
             <motion.div className="textContainer" variants={variants}>
-                <p>I focus on helping your brand grow 
+                <p>I focus on helping your brand grow
                     <br/>and move forward</p>
                 <hr/>
             </motion.div>
             <motion.div className="titleContainer" variants={variants}>
                 <div className="title">
-                    <img src="/people.webp" alt=""/>
+                    <img src="./people.webp" alt=""/>
                     <h1>
                         <motion.b whileHover={{color: "orange"}}>Unique</motion.b> Ideas
                     </h1>
