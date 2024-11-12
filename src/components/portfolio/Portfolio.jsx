@@ -5,9 +5,10 @@ import {motion, useScroll, useSpring, useTransform} from "framer-motion";
 const items = [
     {
       id: 1,
-      title: "React Commerce",
-      img: "https://images.pexels.com/photos/18073372/pexels-photo-18073372/free-photo-of-young-man-sitting-in-a-car-on-a-night-street.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
+      title: "E-commerce Website",
+      img: "./e-commerce.png",
+      desc: "A full-featured e-commerce website built with React, featuring a modern UI design, product catalog, shopping cart functionality, and responsive layout for all devices.",
+      link: "https://ecommerce-ui-production.up.railway.app/"
     },
     {
       id: 2,
@@ -44,12 +45,12 @@ const Single = ({item}) => {
             <div className="container">
                 <div className="wrapper">
                     <div className="imageContainer" ref={ref}>
-                        <img src={item.img} alt=""/>
+                        <img src={item.img} alt={item.title}/>
                     </div>
                     <motion.div className="textContainer" style={{y}}>
                         <h2>{item.title}</h2>
                         <p>{item.desc}</p>
-                        <button>See Demo</button>
+                        <button onClick={() => window.open(item.link, '_blank')}>See Demo</button>
                     </motion.div>
                 </div>
             </div>
