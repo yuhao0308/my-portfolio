@@ -47,14 +47,14 @@ const Intro = () => {
                     <motion.h2 variants={textVariants}>YuHao Wang</motion.h2>
                     <motion.h1 variants={textVariants}>Web Developer</motion.h1>
                     <motion.div className="buttons" variants={textVariants}>
-                        <motion.button 
+                        <motion.button
                         variants={textVariants}
                         whileHover={{ backgroundColor: "rgba(255, 255, 255, 0.2)", color: "white" }}
                         whileTap={{ scale: 0.9 }}
                         >See my Latest Projects</motion.button>
                         <motion.button variants={textVariants}>Contact Me</motion.button>
                     </motion.div>
-                    <motion.img src="/scroll.png" alt="scroll down" variants={textVariants} animate="scrollButton" />
+                    <motion.img src="./scroll.png" alt="scroll down" variants={textVariants} animate="scrollButton" />
                 </motion.div>
             </div>
             <motion.div className="slidingTextContainer">
